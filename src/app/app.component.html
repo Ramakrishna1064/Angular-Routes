@@ -1,0 +1,6 @@
+<ul>
+  <li><a routerLink="./book" routerLinkActive="active">Book</a></li>
+  <li><a [routerLink]="[{outlets:{booklist:['bookdetails']}}]" routerLinkActive="active">Book Details</a></li>
+</ul>
+<router-outlet></router-outlet>
+<router-outlet name="booklist"></router-outlet>
